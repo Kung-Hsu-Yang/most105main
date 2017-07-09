@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+       <link href="Styles/fonts.css" rel="stylesheet" />
+    <link href="Styles/default.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><span class="fa fa-bolt"></span><a href="#">智慧物聯農業生產知識管理系統</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="KnowledgeQuery4.aspx" accesskey="1" title="">Homepaˇge</a></li>
+				<li><a href="QualityRecording_v2.aspx" accesskey="2" title="">Quality Records</a></li>
+				<li><a href="KnowledgeQuery3.aspx" accesskey="3" title="">Knowledge Query</a></li>
+                 <li><a href="Monitor2.aspx" accesskey="4" title="">Monitor</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="header-featured">
+	<div id="banner-wrapper">
+		<div id="banner" class="container">
+            
+
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="featured-wrapper">
+		<div id="featured" class="extra2 margin-btm container">
+			<div class="main-title">
+			
+					 <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+	</div>
+</div>
+    </div>
+	<p>&copy; Copyright@2016 All Rights Reserved</p>
+</body>
+</html>
+
